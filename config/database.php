@@ -1,12 +1,37 @@
 <?php
 
 use Illuminate\Support\Str;
-$DATABASE_URL=parse_url('//uksotmsmgksyzd:3b104cbfbdad4fd9fe1d2e7f9d244be866f133f70c78e6cbb80ee76334367e6a@ec2-54-156-60-12.compute-1.amazonaws.com:5432/daktnk07l8j07a');
+
 return [
 
+    /*
+    |--------------------------------------------------------------------------
+    | Default Database Connection Name
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify which of the database connections below you wish
+    | to use as your default connection for all database work. Of course
+    | you may use many connections at once using the Database library.
+    |
+    */
 
-    'default' => env('DB_CONNECTION', 'pgsql'),
+    'default' => env('DB_CONNECTION', 'mysql'),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Database Connections
+    |--------------------------------------------------------------------------
+    |
+    | Here are each of the database connections setup for your application.
+    | Of course, examples of configuring each database platform that is
+    | supported by Laravel is shown below to make development simple.
+    |
+    |
+    | All database work in Laravel is done through the PHP PDO facilities
+    | so make sure you have the driver for your particular database of
+    | choice installed on your machine before you begin development.
+    |
+    */
 
     'connections' => [
 
